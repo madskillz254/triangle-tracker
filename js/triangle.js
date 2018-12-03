@@ -6,6 +6,8 @@ function triangleTracker(){
   var sideC=(document.getElementById("inputC").value);
 //valueDb.push(sideA,sideB,sideC)
 var output;
+
+if(sideA+sideB>sideC && sideB+sideC>sideA && sideC+sideA>sideB){
    if(sideA===sideB && sideB===sideC){
    output="The dimensions form an equilateral triangle ,since all 3 dimensions are equal"
   document.getElementById("answer").innerHTML= output
@@ -21,13 +23,15 @@ var output;
 document.getElementById("answer").innerHTML=output
 }
 
-else  if( sideA!==sideB && sideB !== sideC && sideC !== sideA ){
+else {
 output="The dimensions form a scalene triangle"
  document.getElementById("answer").innerHTML=output
     }
+  }
 
 else{
   output="NOT A TRIANGLE"
    document.getElementById("answer").innerHTML=output
 }
+
 }
