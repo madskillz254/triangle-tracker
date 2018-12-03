@@ -1,62 +1,33 @@
-//DANIEL MUGAMBI 30/11/2018;15:29 @MORINGASCHOOL
-//TRIANGLE-TRACKER
-var decisionOne="dimensions"
-var decisionTwo="angles"
+function triangleTracker(){
+//var valueDb=[]
 
-var choice=prompt("How would you like to determine the type of a triangle.Using dimensions or angles?");
-if(choice===decisionOne ){
-  //find type of triangle using DIMENSIONS
-  var sideA=parseInt(prompt("Enter dimension for side A:"))
-  var sideB=parseInt(prompt("Enter dimension for side B:"))
-  var sideC=parseInt(prompt("Enter dimension for side C:"))
-
+  var sideA=(document.getElementById("inputA").value);
+  var sideB=(document.getElementById("inputB").value);
+  var sideC=(document.getElementById("inputC").value);
+//valueDb.push(sideA,sideB,sideC)
+var output;
    if(sideA===sideB && sideB===sideC){
-    alert("The dimensions form an equilateral triangle ,since all 3 dimensions are equal")
+   output="The dimensions form an equilateral triangle ,since all 3 dimensions are equal"
+  document.getElementById("answer").innerHTML= output
    }
    else if (sideA===sideB || sideA==sideC || sideB===sideC) {
-    alert("The dimensions form an isosceles triangle, since only two dimensions are equal")
+     output="The dimensions form an isosceles triangle, since only two dimensions are equal"
+      document.getElementById("answer").innerHTML= output
+
    }
 
-  else if( sideA!==sideB && sideB !== sideC && sideC !== sideA ){
-
-       if(sideC === Math.sqrt((sideA*sideA)+(sideB*sideB)) ) {
-        alert("The dimensions form a right angled triangle.Pythagoras theory proves it.Its also a scalene triangle since the sides arent equal ")
-      }
-
-  else {
-      alert("The dimensions form a scalene triangle" )
-    }
+    else if  (sideC === Math.sqrt((sideA*sideA)+(sideB*sideB)) ) {
+         output="The dimensions form a right angled triangle.Pythagoras theory proves it.Its also a scalene triangle since the sides arent equal "
+document.getElementById("answer").innerHTML=output
 }
 
-}
-/*
-else if (choice="angles") {
-    //find type of triangle using ANGLES
-    var angleABC=parseInt(prompt("Enter angle ABC:"))
-    var angleBCA=parseInt(prompt("Enter angle BCA:"))
-    var angleCAB=parseInt(prompt("Enter angle CAB:"))
-
-    if (angleABC===angleBCA  && angleBCA===angleCAB) && (angleABC+angleBCA+angleCAB)=180 {
-    alert("The angles form an equilateral triangle")
-    }
-    else if (angleABC===angleBCA || angleABC===angleCAB || angleBCA===angleCAB) && (angleABC+angleBCA+angleCAB)=180{
-    alert("The angles form an isosceles triangle")
+else  if( sideA!==sideB && sideB !== sideC && sideC !== sideA ){
+output="The dimensions form a scalene triangle"
+ document.getElementById("answer").innerHTML=output
     }
 
-
-      else if (angleABC!==angleBCA && angleBCA!== angleCAB && angleABC!==angleCAB) && (angleABC+angleBCA+angleCAB)=180{
-        if ( angleABC===(180-(angleBCA+angleCAB)) || angleBCA === (180-(angleBCA+angleCAB)) ||  angleCAB === (180-(angleBCA+angleABC)) ){
-        alert("The angles form a scalene triangle and also form a right angled triangle")
-      }
-      else{
-        alert("The angles form a scalene triangle")
-      }
-  }
-  else{
-    alert("invalid input or your values do not add up to 180 degrees")
-  }
-}
-*/
 else{
-    alert("not a triangle")
+  output="NOT A TRIANGLE"
+   document.getElementById("answer").innerHTML=output
+}
 }

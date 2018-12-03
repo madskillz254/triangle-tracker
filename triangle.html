@@ -9,6 +9,33 @@
   <body>
 
     <h1>TRIANGLE TRACKER </h1>
-    <p>A triangle tracker tracks your input and tells you the type of triangle yout inout represents</p>
+    <p>A triangle tracker tracks your input and tells you the type of triangle your input represents</p>
+
+<form id="triangle" action="" method="post" >
+<fieldset>
+<br> <legend>Triangle type</legend>
+  <label>Enter your dimensions</label><br><br>
+  side A:<br>
+   <input type="number" name="sideA" id="inputA" required="required"><br>
+   side B:<br>
+    <input type=number name="sideB" id="inputB" required="required"><br>
+    side C:<br>
+     <input type="number" name="sideC" id="inputC" required="required"><br><br>
+
+   <button type="button"onclick="triangleTracker()">show results</button>
+   <button type="reset" >reset</button><br>
+
+    <br><br> <output name="output" id="answer" readonly></output> <br><br>
+
+
+
+
+
+</fieldset>
+</form>
+
+
+
+
   </body>
   </html>
