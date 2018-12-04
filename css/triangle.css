@@ -3,17 +3,12 @@ body{
   margin: 0;
   font: 400 15px/1.8 "Lato";
   font-style: sans-serif;
-
-}
-.img {
   background: url(../image/img_math_wide.jpg) no-repeat center center fixed;
-  background-size: cover;
-  background-size: cover;
-  background-size: cover;
   background-size: cover;
   min-height: 1000px;
 
 }
+
 .about-triangles{
 
   background-color:rgba(255,255,255, 0.7);
