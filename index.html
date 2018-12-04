@@ -4,17 +4,20 @@
   <title>triangle tracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <script src="js/triangle.js"></script>
+              <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
     <link href="css/triangle.css" rel="stylesheet" type="text/css">
+
   </head>
 
   <body>
 
+    <div class=img >
+
     <h1>TRIANGLE TRACKER </h1>
-    <p>A triangle tracker tracks your input and tells you the type of triangle your input represents</p>
 
 <form id="triangle" action="" method="post" >
 <fieldset>
-<br> <legend>Triangle type</legend>
+<br> <legend><b>Triangle type</b></legend>
   <label>Enter your dimensions</label><br><br>
   side A:<br>
    <input type="number" min="1"  max="100" name="sideA" id="inputA" required="required"><br>
@@ -30,10 +33,23 @@
 
 </fieldset>
 </form>
-<section>
-<br><p2>An isosceles triangle is formed when two of your dimensions are similar<p2>
-</section>
+<br><br>
+<div class="about-triangles">
+  <h2>ALL ABOUT TRIANGLES</h2>
+  <p2>A triangle tracker tracks your input and tells you the type of triangle your input represents</p2>
 
+<ol>
+  <p1><em>NOTE:a triangle is formed when the sum of two dimensions are greater than
+the third ie (A+B) > C.</em></p1>
+
+  <li>An isosceles triangle is formed when two of your dimensions are similar</li>
+  <li>An equilateral triangle is formed when all 3 dimensions are similar</li>
+  <li>A scalene triangle is formed when all your dimensions are not equal</li>
+</ol>
+</div>
+<a href="https://www.twitter.com/feed/">tweet me</a>
+
+</div>
 
 
   </body>

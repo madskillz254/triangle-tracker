@@ -1,7 +1,61 @@
-p{
-  color:red;
+body{
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato";
+  font-style: sans-serif;
+
+}
+.img {
+  background: url(../image/img_math_wide.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-size: cover;
+  background-size: cover;
+  background-size: cover;
+  min-height: 1000px;
+
+}
+.about-triangles{
+
+  background-color:rgba(255,255,255, 0.7);
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+
 }
 
-body{
-  background-color: white
+fieldset{
+    background-color:rgba(255,255,255, 0.7);
+
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+  font-style: ;
+  font-size:40px;
+  color: red;
+
+
+}
+h2{
+  text-align: center;
+    text-decoration: underline;
+}
+
+#triangle{
+
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+}
+legend{
+ font-size: 25px;
+ color:red;
+}
+
+#answer{
+  font-size: 20px;
+}
+p1{
+  color:red;
+
 }
