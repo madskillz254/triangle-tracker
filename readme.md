@@ -21,9 +21,9 @@ Advanced functionalities are not available right now,still in testing phase.ie a
 
 ## Technologies used
 The creation of this program was heavily dependent on:
-CSS :to style the page
-HTML :to make the page active in the web.
-JS :to make the code/the engine of the program.
+* CSS :to style the page
+* HTML :to make the page active in the web.
+* JS :to make the code/the engine of the program.
 
 
 ## Troubleshooting ,help, Bugs and Issues
