@@ -4,7 +4,8 @@
 Triangle Tracker is an online program that allows the user to input 3 values and find out if his/her input is valid in the formation of a triangle and outputs the type it is.
 
 **[View Live Preview](https://madskillz254.github.io/triangle-tracker/)**
-##[homepage] (https://github.com/madskillz254/triangle-tracker/blob/gh-pages/image/triangle.png)
+
+<img url=("https://github.com/madskillz254/triangle-tracker/blob/gh-pages/image/triangle.png")>
 
 ## Download and Installation
 
